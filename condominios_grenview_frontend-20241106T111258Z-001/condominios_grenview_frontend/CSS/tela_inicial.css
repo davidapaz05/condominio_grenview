@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: orbitron;
+}
+
+header {
+    background-color: #C4C8C6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo_inicial{
+    width: 160px;
+    height: auto;
+    margin-bottom: -28px;
+
+}
+
+#titulo{
+    font-size: 3em;
+    color: #000000;
+}
+
+.cadastro_button {
+    padding: 5px 10px;
+    width: 200px;
+    background-color: #000;
+    color: #f7f4f4;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    cursor: pointer;
+    margin-bottom: -28px;
+    box-shadow: #050505;
+}
+
+#cadastro_button :hover{
+    background-color: #858585
+   
+}
+
+
+
+.parquecidade1{
+    width: 100%;
+    height: auto;
+    max-width: 100%; 
+}
+
+@media (max-width: 768px) {
+    #titulo {
+        font-size: 3em; /* Diminuir o tamanho da fonte para tablets */
+    }
+
+    .cadastro_button {
+        width: 150px; /* Ajustar a largura do botão */
+        font-size: 18px; /* Diminuir o tamanho da fonte */
+    }
+
+    #logo_inicial {
+        width: 150px; /* Ajustar o tamanho do logo */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; /* Empilhar elementos do cabeçalho */
+        align-items: flex-start; /* Alinhar itens ao início */
+    }
+
+    #titulo {
+        font-size: 2.5em; /* Diminuir ainda mais o tamanho da fonte para mobile */
+    }
+
+    .cadastro_button {
+        width: 100%; /* Botão com largura total */
+        font-size: 10px; /* Diminuir ainda mais o tamanho da fonte */
+    }
+
+    #logo_inicial {
+        width: 120px; /* Ajustar o tamanho do logo para mobile */
+    }
+}
